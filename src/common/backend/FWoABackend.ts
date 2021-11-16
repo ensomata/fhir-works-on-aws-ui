@@ -17,7 +17,7 @@ export default class FWoABackend implements FhirBackend {
     this.client = axios.create({
       baseURL: REACT_APP_FHIR_SERVER_URL,
       headers: {
-        "x-api-key": REACT_APP_API_KEY,
+        "x-api-key": REACT_APP_API_KEY || "xxx",
         Authorization: `Bearer ${this.accessToken}`,
       },
     });

@@ -55,7 +55,7 @@ export const Landing: React.FC<{
                 fontSize="display-l"
                 color="inherit"
               >
-                FHIR Works Demo
+                FHIR Works Admin
               </Box>
               <Box
                 fontWeight="light"
@@ -93,10 +93,8 @@ export const Landing: React.FC<{
                         variant="primary"
                         onClick={(e) => {
                           e.preventDefault();
-                          const {
-                            REACT_APP_AUTH_URL,
-                            REACT_APP_CLIENT_ID,
-                          } = process.env;
+                          const { REACT_APP_AUTH_URL, REACT_APP_CLIENT_ID } =
+                            process.env;
                           const authUrl = new URL(
                             `${REACT_APP_AUTH_URL}/login` || ""
                           );

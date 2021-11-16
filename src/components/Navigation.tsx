@@ -26,6 +26,7 @@ export const navItems: SideNavigationProps.Section[] = [
   {
     type: "section",
     text: "Source Code",
+    defaultExpanded: false,
     items: [
       {
         type: "link",
